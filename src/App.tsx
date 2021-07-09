@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         </div>
         <div className="content-bottom">
           <div className="sidebar">
-            Sidebar
+            <Sidebar />
           </div>
           <div className="content">
             <div>

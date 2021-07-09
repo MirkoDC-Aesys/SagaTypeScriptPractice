@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+}
+
+.icon {
+    padding: 1rem;
+    color: var(--color-primary);
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icon i {
+    font-size: 1.4rem;
+}
+
+.title {
+    padding: 1rem;
+}

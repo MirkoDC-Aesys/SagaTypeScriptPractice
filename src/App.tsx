@@ -8,6 +8,9 @@ import {
 
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
+import Home from './pages/Home/Home'
+import Counter from './features/Counter/Counter'
+import Cat from './features/Cat/Cat'
 
 function App() {
   return (
@@ -21,23 +24,11 @@ function App() {
             <Sidebar />
           </div>
           <div className="content">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates qui ipsam in hic id quibusdam beatae aliquid error, facere iusto similique sunt saepe, laboriosam, esse quaerat cum sed perferendis!
-            </div>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/Counter" component={Counter} />
+              <Route path="/Cat" component={Cat} />
+            </Switch>
           </div>
         </div>
       </Router>

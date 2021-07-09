@@ -1,14 +1,16 @@
 import React from 'react'
 import classes from './ListRowElement.module.css'
+import { Link } from 'react-router-dom'
 
 interface Props {
     icon: object,
-    title: string
+    title: string,
+    location?: string
 }
 
-const ListRowElement: React.FC<Props> = ({ icon, title }) => {
+const ListRowElement: React.FC<Props> = ({ icon, title, location = '/' }) => {
     return (
-        <a href="">
+        <Link to={location}>
             <div className={classes.container}>
                 <div className={classes.icon}>
                     {icon}
@@ -17,7 +19,7 @@ const ListRowElement: React.FC<Props> = ({ icon, title }) => {
                     {title}
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
 

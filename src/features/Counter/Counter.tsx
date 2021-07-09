@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './Counter.module.css'
+import Button from '../../components/Button'
 
 const Counter = () => {
     return (
@@ -7,7 +8,7 @@ const Counter = () => {
             <div className={classes.counterBox}>
                 <h2>Counter</h2>
                 <div>
-                    <button>-</button>
+                    <Button onClick={() => alert('ciao')}>-</Button>
                     <span>Count</span>
                     <button>+</button>
                 </div>

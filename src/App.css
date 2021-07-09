@@ -1,0 +1,44 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: blue;
+}
+
+.content-top {
+  background-color: red;
+}
+
+.content-bottom {
+  display: flex;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.sidebar {
+  width: 20%;
+  max-width: 300px;
+  background-color: yellow;
+}
+
+.content {
+  background-color: green;
+  flex: 1;
+  overflow-y: overlay;
+}
+
+.content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

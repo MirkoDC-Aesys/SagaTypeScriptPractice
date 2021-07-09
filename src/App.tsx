@@ -6,12 +6,14 @@ import {
   Route
 } from 'react-router-dom'
 
+import Navbar from './components/Navbar'
+
 function App() {
   return (
     <div className="App">
       <Router>
         <div className="content-top">
-          Navbar
+          <Navbar />
         </div>
         <div className="content-bottom">
           <div className="sidebar">

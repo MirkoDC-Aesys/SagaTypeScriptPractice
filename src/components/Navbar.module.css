@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0.1rem 1rem;
+}
+
+.logo {
+    width: 10vw;
+    max-width: 70px;
+    font-size: 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.content {
+    color: white;
+}
+
+.content a {
+    color: var(--color-primary);
+}
+
+.socials {
+    margin-left: auto;
+    display: flex;
+}
+
+.socials > div {
+    padding: 1rem;
+}

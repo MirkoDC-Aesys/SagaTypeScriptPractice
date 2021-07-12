@@ -11,6 +11,7 @@ import Sidebar from './components/Sidebar'
 import Home from './pages/Home/Home'
 import Counter from './features/Counter/Counter'
 import Cat from './features/Cat/Cat'
+import Dog from './features/Dog/Dog'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route path="/Counter" component={Counter} />
               <Route path="/Cat" component={Cat} />
+              <Route path="/Dog" component={Dog} />
             </Switch>
           </div>
         </div>

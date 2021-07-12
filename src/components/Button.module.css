@@ -1,14 +1,25 @@
 .btn {
-    color: var(--color-primary);
+    color: var(--bgcolor-secondary);
+    border: 0;
+    border-bottom: 2px solid var(--color-ternary);
     border-radius: 5px;
     padding: 0.4rem 1rem;
     font-weight: 900;
-    background: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    background: var(--color-primary);
     cursor: pointer;
     position: relative;
     display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
+  }
+
+  .btn:hover {
+    color: var(--color-primary);
+    background: var(--bgcolor-secondary);
+    outline: none;
+    border-color: var(--color-primary);
+  }
+
+  .btn:active {
+    border: 0;
+    transform: translateY(2px);
   }

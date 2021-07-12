@@ -1,15 +1,23 @@
 .container {
     display: flex;
+    color: var(--color-ternary);
+}
+
+.container:hover {
+    color: var(--color-primary);
+}
+
+.containerActive {
+    color: var(--color-primary);
 }
 
 .icon {
     padding: 1rem;
-    color: var(--color-primary);
-    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    width: 20px;
 }
 
 .icon i {
@@ -17,5 +25,14 @@
 }
 
 .title {
+    font-weight: bold;
     padding: 1rem;
+    display: none;
+}
+
+@media screen and (min-width: 660px) {
+    .title {
+      display: block;
+      width: 20%;
+    }
 }

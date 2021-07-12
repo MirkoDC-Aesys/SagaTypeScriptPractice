@@ -1,10 +1,10 @@
 import React from 'react'
-import classes from './Navbar.module.css'
+import classes from './Sidebar.module.css'
 import ListRowElement from './ListRowElement'
 
 const Sidebar = () => {
     return (
-        <div>
+        <div className={classes.container}>
             <ListRowElement icon={<i className="fas fa-home"></i>} title="Home" />
             <ListRowElement icon={<i className="fas fa-calculator"></i>} title="Counter" location='/Counter' />
             <ListRowElement icon={<i className="fas fa-cat"></i>} title="Cat" location='/Cat' />

@@ -16,8 +16,13 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  color: var(--color-primary);
+}
+
 section {
-  border: 1px solid var(--color-primary);
+  background-color: var(--bgcolor-primary);
+  border: 1px solid var(--color-ternary);
   border-radius: 1rem;
   padding: 1rem;
   width: 50%;

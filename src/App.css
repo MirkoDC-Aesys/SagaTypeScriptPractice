@@ -18,13 +18,12 @@
 }
 
 .sidebar {
-  width: 20%;
   max-width: 300px;
   background-color: yellow;
 }
 
 .content {
-  background-color: green;
+  background-color: var(--bgcolor-secondary);
   flex: 1;
   overflow-y: overlay;
 }

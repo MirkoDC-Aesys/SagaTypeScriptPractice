@@ -1,0 +1,5 @@
+.container {
+    border-right: 1px solid var(--color-ternary);
+    height: 100%;
+    background-color: var(--bgcolor-primary);
+}

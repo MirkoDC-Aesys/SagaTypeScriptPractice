@@ -10,7 +10,7 @@ const Cat = () => {
 
     return (
         <div className={classes.container}>
-            <div className={classes.counterBox}>
+            <section>
                 <Button onClick={() => dispatch(getCat())}>Get Cat</Button>
                 <div className={classes.img}>
                     <img src={value} alt="" />
@@ -21,7 +21,7 @@ const Cat = () => {
                         :
                         <div></div>
                 }
-            </div>
+            </section>
         </div>
     )
 }

@@ -10,7 +10,7 @@ const Dog = () => {
 
     return (
         <div className={classes.container}>
-            <div className={classes.counterBox}>
+            <section>
                 <Button onClick={() => dispatch(getDog())}>Get Dog</Button>
                 <div className={classes.img}>
                     <img src={value} alt="" />
@@ -21,7 +21,7 @@ const Dog = () => {
                         :
                         <div></div>
                 }
-            </div>
+            </section>
         </div>
     )
 }

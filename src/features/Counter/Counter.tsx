@@ -10,14 +10,14 @@ const Counter = () => {
 
     return (
         <div className={classes.container}>
-            <div className={classes.counterBox}>
+            <section>
                 <h2>Counter</h2>
                 <div className={classes.countContainer}>
                     <Button onClick={() => dispatch(incremented())}>-</Button>
                     <span className={classes.count}>{count}</span>
                     <Button onClick={() => dispatch(decremented())}>+</Button>
                 </div>
-            </div>
+            </section>
         </div>
     )
 }
